@@ -1,0 +1,32 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "ID": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tags": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "dataset_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "input_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "output_label": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
