@@ -14,17 +14,23 @@
       "dtype": "string",
       "_type": "Value"
     },
-    "dataset_id": {
+    "dataset_num": {
       "dtype": "int64",
       "_type": "Value"
     },
-    "input_text": {
-      "dtype": "string",
-      "_type": "Value"
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
     },
-    "output_label": {
-      "dtype": "string",
-      "_type": "Value"
+    "ner_tags": {
+      "feature": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
     }
   },
   "homepage": "",
