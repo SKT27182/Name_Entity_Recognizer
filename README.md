@@ -58,18 +58,12 @@ $$
 \hline
  &  T_1 \text{ test set} &  T_1 \text{ and } T_2 \text{ test sets} &  T_1, T_2, \text{ and } T_3 \text{ test sets} & \text{Combined } G_1+G_2+G_3 \\
 \hline
-\text{Treatment
-F1} & 0.695 & 0.703 & 0.720 & 0.736\\
+\text{Weighted
+F1} & 0.961463 & 0.961732 & 0.968554 & 0.971144\\
 \hline
-\text{Chronic
-Disease
-F1} & 0.720 & 0.732 & 0.732 & 0.755\\
+\text{Weighted Precision} & 0.962588 & 0.962024 & 0.968709 & 0.971251\\
 \hline
-\text{Cancer
-F1} & 0.683 & 0.666 & 0.676 & 0.703\\
-\hline
-\text{Allergy
-F1} & 0.324 & 0.675 & 0.739 & 0.755\\
+\text{Weighted Recall} & 0.962971 & 0.962143 & 0.968656 & 0.971214\\
 \hline
 \end{array}
 $$
@@ -80,12 +74,9 @@ $$
 ## HuggingFace Model's Links
 
 - Processed_Dataset: **SKT27182/NER_processed_data**
-- $T_1$ Model: **SKT27182/Name_Entity_Recognizer_model1**
-- $T_2$ Model: **SKT27182/Name_Entity_Recognizer_model2**
-- $T_3$ Model: **SKT27182/Name_Entity_Recognizer_model3**
 - Combined Model: **SKT27182/Name_Entity_Recognizer**
 
 
 ## What to do next?
 
-Because of less time I was not able to format the model's output. Currently it gives the output for each of the tokenized word. But it should give the combined entity. For eg: `NB` is a `chrmonical_disease` and `NB` is a single word. But tokenizer tokenizes it as `N` and `B`. Hence currently it is giving output as `N` and `B` as `chrmonical_disease`. But it should give `NB` as `chrmonical_disease`.
+- Right Now I have just taken the top 50 from each task and added that to the training set of next task. But, In future I will try to add those examples which are miss-classified So that model can learn from its own mistake. SO may be in future the Continuous fine-tuning will give better results.
