@@ -56,13 +56,20 @@ I have fine-tuned the model in continous manner. First in the `G-1` dataset, the
 $$
 \begin{array}{|c|c|c|c|c|}
 \hline
- & \text{Performance on } T_1 \text{ test set} & \text{Performance on } T_1 \text{ and } T_2 \text{ test sets} & \text{Performance on } T_1, T_2, \text{ and } T_3 \text{ test sets} & \text{Performance on combined } G_1+G_2+G_3 \\
+ &  T_1 \text{ test set} &  T_1 \text{ and } T_2 \text{ test sets} &  T_1, T_2, \text{ and } T_3 \text{ test sets} & \text{Combined } G_1+G_2+G_3 \\
 \hline
-\text{Precision} & 0.665049 & 0.679740 & 0.709221 & 0.717994\\
+\text{Treatment
+F1} & 0.695 & 0.703 & 0.720 & 0.736\\
 \hline
-\text{Recall} & 0.732900 & 0.741376 & 0.757616 & 0.765099\\
+\text{Chronic
+Disease
+F1} & 0.720 & 0.732 & 0.732 & 0.755\\
 \hline
-\text{F1-Score} & 0.697328 & 0.709221 & 0.722247 & 0.740798\\
+\text{Cancer
+F1} & 0.683 & 0.666 & 0.676 & 0.703\\
+\hline
+\text{Allergy
+F1} & 0.324 & 0.675 & 0.739 & 0.755\\
 \hline
 \end{array}
 $$
@@ -70,13 +77,13 @@ $$
 - From above table, we can see that the continuous fine-tuning of the model is giving better results. But the last model which is trained on the combined dataset is giving the best results. It could be improved further by usingg more-complex model for fine-tuning. 
 
 
-## Links
+## HuggingFace Model's Links
 
-- [Processed_Dataset](SKT27182/NER_processed_data)
-- [$T_1$ Model](SKT27182/Name_Entity_Recognizer_model1)
-- [$T_2$ Model](SKT27182/Name_Entity_Recognizer_model2)
-- [$T_3$ Model](SKT27182/Name_Entity_Recognizer_model3)
-- [Combined Model](SKT27182/Name_Entity_Recognizer)
+- Processed_Dataset: **SKT27182/NER_processed_data**
+- $T_1$ Model: **SKT27182/Name_Entity_Recognizer_model1**
+- $T_2$ Model: **SKT27182/Name_Entity_Recognizer_model2**
+- $T_3$ Model: **SKT27182/Name_Entity_Recognizer_model3**
+- Combined Model: **SKT27182/Name_Entity_Recognizer**
 
 
 ## What to do next?
